@@ -15,3 +15,7 @@
 # Maven
 log/
 target/
+
+### Java ###
+doc/
+*.class
