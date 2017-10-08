@@ -6,7 +6,7 @@
 # Intellij
 .idea/
  out/
- out/production/
+ out/**/logback.xml
 *.iml
 *.iws
 
