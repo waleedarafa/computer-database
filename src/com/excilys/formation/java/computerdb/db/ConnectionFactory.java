@@ -27,8 +27,8 @@ public class ConnectionFactory {
     /**
      * driver to connect to the database
      */
-    public static final String DRIVER_CLASS = "com.mysql.jdbc.Driver"; 
-     
+    public static final String DRIVER_CLASS = "com.mysql.jdbc.Driver";
+
     //private constructor
     private ConnectionFactory() {
         try {
@@ -37,7 +37,7 @@ public class ConnectionFactory {
             e.printStackTrace();
         }
     }
-     
+
     private Connection createConnection() {
         Connection connection = null;
         try {
@@ -46,8 +46,8 @@ public class ConnectionFactory {
             System.out.println("ERROR: Unable to Connect to Database.");
         }
         return connection;
-    }   
-     
+    }
+
     /**
      * Create and return a new connection to the database
      * @return a connection to the database
