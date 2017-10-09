@@ -75,8 +75,8 @@ public class ComputerDAO implements DAO<Computer> {
 			logger.error("Error while creating the computer");
 			return 0;
 		} finally{
-			DbUtil.close(rs);
 			DbUtil.close(statement);
+			DbUtil.close(rs);
 			DbUtil.close(connect);
 		}
 	}
